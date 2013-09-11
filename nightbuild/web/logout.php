@@ -1,3 +1,4 @@
+<?php
 include 'functions.php';
 sec_session_start();
 // Unset all session values
@@ -9,3 +10,4 @@ setcookie(session_name(), '', time() - 42000, $params["path"], $params["domain"]
 // Destroy session
 session_destroy();
 header('Location: ./');
+?>
